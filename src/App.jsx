@@ -4,10 +4,12 @@ import Hero from "./components/hero"
 import Services from "./components/services"
 import Contact from "./components/contact"
 import About from "./components/aboutus"
-import { Route, Routes } from "react-router-dom"
+import { Router,Route, Routes } from "react-router-dom"
 import Loyality from "./components/loyalty"
 function App() {
   return (
+    // <Router basename="/Saraswati-Filling-Station">
+
     <Routes>
       <Route path="/" element={<><Header /><Hero /></>} />
       <Route path="/services" element={<Services />} />
@@ -16,6 +18,7 @@ function App() {
       <Route path="/Loyal-program" element={<Loyality />} />
       
     </Routes>
+    // </Router>
   )
 }
 
